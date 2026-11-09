@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en" data-theme="dark" style="color-scheme: dark;"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Visuals by Hunzi</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,800&amp;family=Playfair+Display:ital,wght@1,600&amp;display=swap">
+<style>
+:root{--tx:#f6e6de;--mu:#d2aea2;--o:#e8873a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+*{box-sizing:border-box}
+body{margin:0;background:#120508;color:var(--tx);font:400 16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(circle at 70% 40%,#5a0f1c,#120508 72%)}
+.bg i{position:absolute;border-radius:50%;filter:blur(70px);animation:fl 18s ease-in-out infinite alternate}
+.b1{width:46vmax;height:46vmax;left:-15vmax;bottom:-12vmax;background:#c8702a}
+.b2{width:44vmax;height:44vmax;right:-12vmax;top:5vmax;background:#a3162c;animation-delay:-6s}
+.b3{width:22vmax;height:22vmax;left:40vw;top:55vh;background:#e8873a;opacity:.35;animation-delay:-11s}
+@keyframes fl{to{transform:translate(6vmax,-5vmax) scale(1.15) rotate(40deg);border-radius:42% 58% 55% 45%}}
+.glass{background:linear-gradient(135deg,rgba(255,255,255,.17),rgba(255,255,255,.04));backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.28);box-shadow:inset 0 1px 1px rgba(255,255,255,.5),inset 0 -10px 24px rgba(255,150,80,.12),0 14px 44px rgba(0,0,0,.45)}
+.bub{position:relative;overflow:hidden}
+.bub:hover,.bub.pop{animation:bub .9s ease-out}
+@keyframes bub{20%{transform:scale(1.06,.94)}40%{transform:scale(.95,1.06)}60%{transform:scale(1.03,.98)}80%{transform:scale(.99,1.01)}}
+.rip{position:absolute;width:12px;height:12px;margin:-6px;border-radius:50%;border:2px solid rgba(255,255,255,.7);background:rgba(255,255,255,.25);animation:rp .9s ease-out forwards;pointer-events:none}
+@keyframes rp{to{transform:scale(24);opacity:0}}
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:calc(12px + env(safe-area-inset-top,0px)) 22px 12px;border-radius:0 0 24px 24px}
+.logo{font:italic 600 24px 'Playfair Display',Georgia,serif}
+.nav nav{display:flex;gap:6px}
+.nav a{padding:6px 16px;border-radius:99px;color:var(--mu);cursor:pointer;font-size:15px}
+section{max-width:1100px;margin:auto;padding:100px 20px 40px;text-align:center}
+.t{margin:0;font:italic 800 clamp(36px,8.4vw,128px)/1 Inter,system-ui,sans-serif;letter-spacing:-.02em;background:linear-gradient(90deg,#8d7c7c,#7e5f5f 45%,#bd4b34);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.9}
+.t2{font-size:clamp(34px,6vw,64px)}
+.sub{color:var(--mu);margin:6px 0 10px}
+.fl{animation:fy 6s ease-in-out infinite alternate}
+@keyframes fy{to{transform:translateY(-14px)}}
+.tilt{transition:transform .15s;transform-style:preserve-3d;width:fit-content;margin:auto}
+.orb{width:min(290px,70vw);aspect-ratio:1;border-radius:50%;margin:auto;background:#2a0d14 center/cover;border:3px solid rgba(232,135,58,.75);box-shadow:0 0 60px rgba(232,135,58,.45),0 30px 60px rgba(0,0,0,.6),inset 0 0 40px rgba(255,255,255,.18);display:grid;place-items:center;color:var(--mu);font-size:14px;position:relative;overflow:hidden}
+.orb::after{content:"";position:absolute;inset:0;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.5),transparent 38%),radial-gradient(circle at 70% 92%,rgba(232,135,58,.35),transparent 45%)}
+.orb b{font:italic 600 80px 'Playfair Display',serif;opacity:.5}
+.sm .orb{width:min(210px,60vw)}
+.ed .orb{cursor:pointer;outline:2px dashed rgba(255,255,255,.6);outline-offset:6px}
+.badge{display:inline-block;margin:34px 0 18px;padding:8px 22px;border-radius:99px;font-weight:600;font-size:15px}
+.intro{max-width:580px;margin:0 auto 26px;color:var(--mu)}
+.btn{display:inline-block;padding:13px 32px;border-radius:99px;font:600 15px Inter,sans-serif;color:#fff;border:1px solid rgba(255,255,255,.4);background:linear-gradient(120deg,rgba(214,40,60,.8),rgba(232,135,58,.8));box-shadow:inset 0 1px 1px rgba(255,255,255,.5),0 10px 30px rgba(200,40,60,.4);cursor:pointer}
+.card{max-width:700px;margin:30px auto 0;padding:44px 28px;border-radius:44px 60px 48px 56px}
+.tag{color:var(--o);font-weight:600;margin:4px 0 26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px;margin-top:30px}
+.vcard{border-radius:30px;padding:12px;text-align:left}
+.vcard video{width:100%;border-radius:20px;background:#000;display:block;aspect-ratio:16/9}
+.vcard input{margin:10px 0 0}
+.vcard p{margin:10px 6px 2px}
+.x{position:absolute;top:18px;right:18px;z-index:2;width:34px;height:34px;border-radius:50%;border:0;background:rgba(0,0,0,.6);color:#fff;cursor:pointer}
+.add{min-height:200px;display:grid;place-items:center;border-radius:30px;cursor:pointer;color:var(--mu);padding:20px}
+footer{padding:50px 20px 60px;text-align:center}
+.panel{position:fixed;top:0;right:0;bottom:0;width:min(390px,100%);z-index:30;padding:calc(18px + env(safe-area-inset-top,0px)) 18px calc(18px + env(safe-area-inset-bottom,0px));overflow:auto;text-align:left;border-radius:26px 0 0 26px;background:rgba(28,8,13,.82)}
+.panel h3{margin:0 0 12px;font:italic 600 22px 'Playfair Display',serif}
+label{font-size:13px;color:var(--mu)}
+input,textarea{width:100%;margin:4px 0 12px;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font:inherit}
+input[type=checkbox]{width:auto;margin-right:8px}
+.panel .btn{padding:10px 18px;margin:0 6px 10px 0}
+.panel small{display:block;color:var(--mu);margin:8px 0 14px}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,40px);opacity:0;z-index:50;padding:12px 22px;border-radius:99px;transition:.4s;max-width:92vw;text-align:center}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="bg"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+<div id="site" class=""></div><div id="panel"></div>
+<div id="toast" class="glass"></div>
+<script id="site-data" type="application/json">{"showAbout": true, "showWork": true, "videos": [{"url": "videos/1.mp4", "t": ""}, {"url": "videos/2.mp4", "t": ""}, {"url": "videos/3.mp4", "t": ""}, {"url": "videos/4.mp4", "t": ""}, {"url": "videos/5.mp4", "t": ""}, {"url": "videos/6.mp4", "t": ""}, {"url": "videos/7.mp4", "t": ""}, {"url": "videos/8.mp4", "t": ""}, {"url": "videos/9.mp4", "t": ""}, {"url": "videos/10.mp4", "t": ""}, {"url": "videos/11.mp4", "t": ""}, {"url": "videos/12.mp4", "t": ""}, {"url": "videos/13.mp4", "t": ""}, {"url": "videos/14.mp4", "t": ""}, {"url": "videos/15.mp4", "t": ""}, {"url": "videos/16.mp4", "t": ""}, {"url": "videos/18.mp4", "t": ""}], "brand": "Hunzi", "title": "VISUALS BY HUNZI", "sub": "Video editor · Real estate visuals 🏠", "badge": "Expert in Real Estate Videos", "intro": "Hi, I’m Hanzala Iqbal 👋 I work with real estate agents — helping grow their business through video 🏡 — and I run my own editing agency, now 2 years in. I’ve also worked with several channels, including ZEM TV, generating 2.5M+ views. 🎬 📈", "aboutTag": "Real Estate Video Specialist", "aboutText": "**Turning Real Estate Footage Into Powerful Marketing Content.**
+
+Creating engaging, high-quality videos that help real estate agents strengthen their brand, showcase their properties, and grow their business.", "photo": "images/profile.webp", "aboutPhoto": "images/profile.webp"}</script>
+<script>
+const $=s=>document.querySelector(s);
+const S=JSON.parse($('#site-data').textContent);
+const esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const nl=t=>esc(t).replace(/\n/g,'<br>');
+const orb=(k,sm)=>`<div class="${sm?'sm':''} fl"><div class="tilt"><div class="orb bub" style="background-image:url('${esc(S[k])}')"></div></div></div>`;
+function renderSite(){
+  $('#site').innerHTML=`<div class="nav glass"><div class="logo">${esc(S.brand)}</div><nav>${S.showAbout?'<a class="bub" data-go="about">About</a>':''}${S.showWork?'<a class="bub" data-go="work">Work</a>':''}</nav></div>
+  <section><h1 class="t">${esc(S.title)}</h1><div class="sub">${esc(S.sub)}</div>${orb('photo')}
+  <div class="badge glass bub">${esc(S.badge)}</div><p class="intro">${nl(S.intro)}</p><a class="btn bub" data-go="work">See the work</a></section>
+  ${S.showAbout?`<section id="about"><div class="card glass"><h2 class="t t2">About</h2><div class="tag">${esc(S.aboutTag)}</div>${orb('aboutPhoto',1)}<p class="intro" style="margin-top:28px">${nl(S.aboutText)}</p></div></section>`:''}
+  ${S.showWork?`<section id="work"><h2 class="t t2">Work</h2><div class="tag">${esc(S.aboutTag)}</div><div class="grid">${S.videos.map((v,i)=>`<div class="vcard glass bub"><video src="${esc(v.url)}" controls preload="metadata" playsinline></video>${v.t?`<p>${esc(v.t)}</p>`:''}</div>`).join('')}</div></section>`:''}
+  <footer></footer>`;
+}
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g)document.getElementById(g.dataset.go)?.scrollIntoView({behavior:'smooth'})});
+document.addEventListener('pointerdown',e=>{const b=e.target.closest('.bub');if(!b)return;const r=b.getBoundingClientRect(),s=document.createElement('span');s.className='rip';s.style.cssText=`left:${e.clientX-r.left}px;top:${e.clientY-r.top}px`;b.appendChild(s);setTimeout(()=>s.remove(),900);b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop')});
+document.addEventListener('pointermove',e=>document.querySelectorAll('.tilt').forEach(t=>{const r=t.getBoundingClientRect(),k=v=>Math.max(-.8,Math.min(.8,v));t.style.transform=`perspective(800px) rotateY(${k((e.clientX-r.left)/r.width-.5)*30}deg) rotateX(${-k((e.clientY-r.top)/r.height-.5)*30}deg)`}));
+renderSite();
+</script>
+</body></html>
